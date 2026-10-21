@@ -13,7 +13,7 @@ local function set_param(key, val)
   osc.send({ "localhost", 57120 }, "/fx_pete/set", {key, val})
 end
 
-function FxFrez:add_params()
+function FxPete:add_params()
     params:add_group("fx_pete", "fx pEte", 4)
     FxPete:add_slot("fx_pete_slot", "slot")
 
